@@ -12,14 +12,14 @@ type NUL > .\etc\conda\activate.d\env_vars.bat<BR>
 type NUL > .\etc\conda\deactivate.d\env_vars.bat<BR>
 
 ## env_vars.bat for actvation
-@echo off
-set DRIVE=[enter code drive here]
-%DRIVE%
-set BASE_DIR=[Add project code dir here]
-CD %BASE_DIR%
+@echo off<BR>
+set DRIVE=[enter code drive here]<br>
+%DRIVE%<BR>
+set BASE_DIR=[Add project code dir here]<BR>
+CD %BASE_DIR%<BR>
 
 
 ## env_vars.bat for deactvation
-@echo off
-set DRIVE=
-set BASE_DIR=
+@echo off<BR>
+set DRIVE=<BR>
+set BASE_DIR=<BR>
