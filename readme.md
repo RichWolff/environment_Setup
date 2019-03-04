@@ -6,7 +6,7 @@ python -m ipykernel install --user --name pandas_cub --display-name "Python [Ent
 
 ## Move to environment folder and create activate/deactivate scripts. 
 cd %CONDA_PREFIX%
-mkdir .\etc\conda\activate.d
+mkdir .\etc\conda\activate.d\n
 mkdir .\etc\conda\deactivate.d
 type NUL > .\etc\conda\activate.d\env_vars.bat
 type NUL > .\etc\conda\deactivate.d\env_vars.bat
