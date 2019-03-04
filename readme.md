@@ -1,3 +1,5 @@
+[Activate/Deactivate Environment Variables](#envvars)
+
 ## Create a new environment
 conda create -n [Env Name]
 
@@ -11,13 +13,14 @@ mkdir .\etc\conda\deactivate.d<BR>
 type NUL > .\etc\conda\activate.d\env_vars.bat<BR>
 type NUL > .\etc\conda\deactivate.d\env_vars.bat<BR>
 
+# Environment Variables On Activate And Deactivate
+<div id='envvars'/>
 ## env_vars.bat for actvation
 @echo off<BR>
 set DRIVE=[enter code drive here]<br>
 %DRIVE%<BR>
 set BASE_DIR=[Add project code dir here]<BR>
 CD %BASE_DIR%<BR>
-
 
 ## env_vars.bat for deactvation
 @echo off<BR>
@@ -28,4 +31,5 @@ set BASE_DIR=<BR>
 conda env export > environment.yml
 
 ## Create environment from environment.yml file
+-----------------------------------------------
 conda env create -f environment.yml
