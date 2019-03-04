@@ -23,3 +23,6 @@ CD %BASE_DIR%<BR>
 @echo off<BR>
 set DRIVE=<BR>
 set BASE_DIR=<BR>
+
+## Export Environment to environment.yml
+conda env export > environment.yml
