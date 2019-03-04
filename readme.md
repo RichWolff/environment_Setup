@@ -24,5 +24,8 @@ CD %BASE_DIR%<BR>
 set DRIVE=<BR>
 set BASE_DIR=<BR>
 
-## Export Environment to environment.yml
+## Export Environment to environment.yml file
 conda env export > environment.yml
+
+## Create environment from environment.yml file
+conda env create -f environment.yml
