@@ -7,6 +7,9 @@ conda create -n [Env Name] [Packages to install, IE python=3.7 numpy pandas or n
 ##### From Env.yml file
 conda env create -n conda-env -f [/path/to/environment.yml] 
 
+## Add packages to and environment from an env.yml file
+conda env update -n conda-env -f /path/to/environment.yml
+
 ## Create a new kernel for jupyter notebook (Perform this from your activated environment)
 python -m ipykernel install --user --name pandas_cub --display-name "Python [EnterVersion] ([Enter Env Name])"
 
