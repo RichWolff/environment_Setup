@@ -1,10 +1,10 @@
 [Activate/Deactivate Environment Variables](#envvars)
 
 ## Create a new environment
-*Start A New Env*
+##### Start A New Env
 conda create -n [Env Name] [Packages to install, IE python=3.7 numpy pandas or none for full anaconda install]<br>
 
-*# From Env.yml file*
+##### From Env.yml file
 conda env create -n conda-env -f [/path/to/environment.yml] 
 
 ## Create a new kernel for jupyter notebook (Perform this from your activated environment)
